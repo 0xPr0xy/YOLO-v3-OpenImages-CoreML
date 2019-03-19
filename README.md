@@ -20,7 +20,7 @@ The [converted CoreML model](https://github.com/0xPr0xy/YOLO-v3-OpenImages-CoreM
 
 4. Run the following:
 
-```Shell
+```shell
 python3 convert.py yolov3-openimages.cfg yolov3-openimages.weights model_data/yolo-openimages.h5
 ```
 
@@ -28,13 +28,13 @@ python3 convert.py yolov3-openimages.cfg yolov3-openimages.weights model_data/yo
 
 1. Install coremltools:
 
-```
+```shell
 pip install coremltools
 ```
 
 2. Create and run this file:
 
-```
+```python
 import coremltools
 
 coreml_model = coremltools.converters.keras.convert(
