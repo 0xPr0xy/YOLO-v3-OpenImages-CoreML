@@ -6,6 +6,8 @@
 
 [Darknet Website](https://pjreddie.com/darknet/)
 
+The [converted CoreML model](https://github.com/0xPr0xy/YOLO-v3-OpenImages-CoreML/blob/master/YOLO-CoreML/yolo-openimages.mlmodel) is included in this repository
+
 ## YOLOv3 on Openimages dataset
 
 ### Create keras model
@@ -18,7 +20,7 @@
 
 4. Run the following:
 
-```
+```Shell
 python3 convert.py yolov3-openimages.cfg yolov3-openimages.weights model_data/yolo-openimages.h5
 ```
 
@@ -57,7 +59,7 @@ Now you have a CoreML model!
 
 To implement something usefull with this you'll need the anchors, found in the `yolov3 -openimages.cfg`
 
-`[10.13,  16.30,  33.23,  30.61,  62.45,  59.119,  116.90,  156.198,  373.326, 0.0]`
+`[10.13,  16.30,  33.23,  30.61,  62.45,  59.119,  116.90,  156.198,  373.326]`
 
 And the labels for the openimages dataset categories
 
